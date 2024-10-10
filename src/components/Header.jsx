@@ -36,7 +36,7 @@ export function Header() {
         >
           New Account
         </a>
-        <Button className="lg:flex">Sign in</Button>
+        <Button className="hidden lg:flex">Sign in</Button>
       </div>
     </div>
   );
