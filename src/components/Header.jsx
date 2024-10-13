@@ -69,8 +69,12 @@ export function Header() {
         >
           New Account
         </a>
-        <Button>Sign in</Button>
-        <Button className="ml-auto" px="px-3" onClick={toggleNavigation}>
+        <Button className="button hidden lg:block">Sign in</Button>
+        <Button
+          className="ml-auto lg:hidden"
+          px="px-3"
+          onClick={toggleNavigation}
+        >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
