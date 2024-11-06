@@ -1,4 +1,4 @@
-import { brainwave } from "../assets";
+import insights from "../assets/insight-favcon.png";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import { Button } from "./Button";
@@ -35,8 +35,11 @@ export function Header() {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={brainwave} width={190} height={40} alt="Brainwave Logo" />
+        <a className="flex w-[12rem] xl:mr-8" href="#hero">
+          <img src={insights} width={70} height={70} alt="Insights Logo" />
+          <h1 className="flex items-center px-5 text-3xl text-purple-500 ">
+            Insights
+          </h1>
         </a>
         <nav
           className={`${
